@@ -13,14 +13,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91-XXXXXXXXXX",
-    href: "tel:+91XXXXXXXXXX",
+    value: "+91-7838352909",
+    href: "tel:+917838352909",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "Chat on WhatsApp",
-    href: "https://wa.me/91XXXXXXXXXX",
+    href: "https://wa.me/917838352909",
   },
   {
     icon: Mail,
@@ -145,7 +145,7 @@ export default function ContactPage() {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/917838352909"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -209,7 +209,7 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setForm((p) => ({ ...p, phone: e.target.value }))
                       }
-                      placeholder="+91-XXXXXXXXXX"
+                      placeholder="+91-7838352909"
                       className="bg-navy border-white/15 text-white placeholder:text-white/30 focus:border-gold/50 font-body"
                       data-ocid="contact.input"
                     />

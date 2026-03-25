@@ -45,24 +45,24 @@ const whyPoints = [
 
 const milestones = [
   {
-    year: "2010",
+    year: "2020",
     event: "Founded in India with a vision to democratize global immigration",
   },
   {
-    year: "2014",
+    year: "2021",
     event: "Expanded to Gulf visa services — UAE, Saudi Arabia, Qatar",
   },
   {
-    year: "2017",
+    year: "2022",
     event: "Launched immigration consultancy for Canada, Australia, and UK",
   },
-  { year: "2020", event: "Processed 2,000+ successful visa applications" },
+  { year: "2023", event: "Processed 2,000+ successful visa applications" },
   {
     year: "2023",
     event: "Introduced Germany Chancenkarte and Europe work permit services",
   },
   {
-    year: "2024",
+    year: "2026",
     event: "Reached 5,000+ visa approvals with 98% success rate",
   },
 ];
@@ -95,7 +95,7 @@ export default function AboutPage() {
             <div className="w-16 h-1 bg-gold mx-auto mb-6 rounded-full" />
             <p className="text-white/65 font-body text-lg max-w-2xl mx-auto">
               Your trusted partner in navigating the complexities of global
-              immigration and visa services since 2010.
+              immigration and visa services since 2020.
             </p>
           </motion.div>
         </div>
@@ -161,7 +161,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             {milestones.map((m, i) => (
               <motion.div
-                key={m.year}
+                key={`${m.year}-${i}`}
                 initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
